@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 24px;
+  background-image: url(greenback.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: bold;
+  color: ghostwhite;
+  -webkit-text-stroke-width: .3px;
+  -webkit-text-stroke-color: black
+
+}
+
+a {
+  text-decoration: none;
+}
+.give {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 516px) {
+  .give {
+    font-size: .9rem;
+  }
+}
+.hero {
+  height: auto;
+  max-width: 100%;
+  display: flex;
+}
+.hero img {
+  border-radius: 20px;
+  background-color: rgba(245, 245, 245, .9);
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  height: 300px;
+}
+@media only screen and (max-width: 516px) {
+  .hero {
+    height: auto;
+    max-width: 100%;
+  }
+  .hero img {
+    height: 150px;
+  }
+}
+nav {
+  margin: 20px;
+  grid-area: nav;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+
+}
+.nav-item {
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 1s;
+  color: ghostwhite;
+}
+.nav-item:hover {
+  font-size: 1.5rem;
+  
+}
+.main {
+ /* color: rgba(144, 15, 15, 1.0);*/
+ margin-top: auto;
+ display: grid;
+ grid-auto-columns:1fr 1fr;
+ grid-template-rows: 1fr .5fr;
+ grid-template-areas: 
+ "left left"
+ "space right";
+ grid-gap: .7rem;
+}
+.right {
+  grid-area: right;
+  color: black;
+  background-color: rgba(245, 245, 245, .9);
+  border-radius: 20px;
+}
+.space {
+  grid-area: space;
+}
+.left {
+  grid-area: left;
+}
+.item {
+  color: whitesmoke;
+  cursor: pointer;
+  transition: 1s;
+
+}
+.item:hover {
+  opacity: .5;
+}
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.image img{
+  height: 250px;
+  width: 300px;
+}
+
+
+.videos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 50px;
+
+}
+.videos video {
+  height: 300px;
+  width: 300px;
+
+}
+
+.footer {
+  padding-top: 100px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rgba(144, 15, 15, .7);
+}
+.droplace {
+  position: relative;
+/*  display: inline-block;*/
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(144, 15, 15, .9);
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.droplace a:hover {background-color: rgba(0,0,0,0.2);}
+
+.show {display: block;}
+
+.redish {
+  color: rgba(144, 15, 15, 1.0);
+}

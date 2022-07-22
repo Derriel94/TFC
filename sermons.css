@@ -5,6 +5,7 @@ body {
   font-size: 24px;
   background-image: url(background.png);
   font-weight: bold;
+  min-height: 100vh;
 }
 
 a {
@@ -66,8 +67,8 @@ nav {
   color: whitesmoke;
   cursor: pointer;
   transition: 1s;
-
 }
+
 .item:hover {
   opacity: .5;
 }
@@ -79,14 +80,15 @@ nav {
   padding-top: 50px;
 
 }
-.videos video {
-  height: 300px;
-  width: 300px;
+
+.videos iframe {
+  height: 350px;
+  width: 350px;
 
 }
 
 .footer {
-  padding-top: 100px;
+  margin-top: auto;
 }
 
 .dropbtn:hover, .dropbtn:focus {

@@ -27,19 +27,19 @@ a {
     font-size: .9rem;
   }
 }
-.hero {
+.transforming-foundation-church {
   height: auto;
   max-width: 100%;
 }
-.hero img {
+.transforming-foundation-church img {
   height: 300px;
 }
 @media only screen and (max-width: 516px) {
-  .hero {
+  .transforming-foundation-church {
     height: auto;
     max-width: 100%;
   }
-  .hero img {
+  .transforming-foundation-churcho img {
     height: 150px;
   }
 }
